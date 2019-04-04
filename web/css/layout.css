@@ -1,0 +1,65 @@
+/* layout */
+.header{
+	width:1000px;
+	height:80px;
+	margin:0 auto;
+	background-color:navy;
+}
+.container{
+	width:1000px;
+	margin:0 auto;
+}
+.container::after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.sidemenu{
+	float:left;
+	width:150px;
+	height:500px;
+	background-color:yellowgreen;
+}
+.csection{
+	float:right;
+	width:800px;
+	height:1000px;
+	background-color:palegreen;
+}
+.footer{
+	width:1000px;
+	height:80px;
+	margin:0 auto;
+	background-color:purple;
+}
+
+@media(max-width:768px;){
+	body{
+		padding:0 15px;
+	}
+	.header{
+		width:100%;
+	}
+	.container{
+		width:100%;
+		padding:20px;
+		background-color:tomato;
+	}
+	.sidemenu{
+		float:none;
+		width:100%;
+		height:100px;
+	}
+	.csection{
+		float:none;
+		width:100%;
+	}
+	.footer{
+		width:100%;
+	}
+}
+@media(max-width:460px;){
+	.sidemenu{
+		display:none;
+	}
+}
